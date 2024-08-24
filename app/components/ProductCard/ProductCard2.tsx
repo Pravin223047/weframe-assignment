@@ -55,6 +55,7 @@ const ProductCard2 = () => {
       pricePer: "pro Gramm",
       buttonText: "In den Warenkorb",
     },
+    // Add more products if needed
   ];
 
   return (
@@ -72,10 +73,11 @@ const ProductCard2 = () => {
           <div className="w-full h-48 relative">
             <Image
               src={product.image}
-              alt="Product Image"
+              alt={product.title} // Use product title for better alt text
               layout="fill"
               objectFit="contain"
               className="pb-4"
+              priority // Load images with high priority if they are above the fold
             />
           </div>
           <div className="p-4 bg-[#D0EDEE] px-5 py-5">
