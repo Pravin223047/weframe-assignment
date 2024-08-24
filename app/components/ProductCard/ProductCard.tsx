@@ -1,6 +1,6 @@
-import React from "react";
 import Image from "next/image";
 
+// components/ProductCard.js
 const ProductCard = () => {
   // Static product data
   const products = [
@@ -58,7 +58,6 @@ const ProductCard = () => {
       pricePer: "pro Gramm",
       buttonText: "In den Warenkorb",
     },
-    // ... other products
   ];
 
   return (
@@ -79,11 +78,10 @@ const ProductCard = () => {
           <div className="w-full h-48 relative">
             <Image
               src={product.image}
-              alt={product.title} 
+              alt="Product Image"
               layout="fill"
               objectFit="contain"
               className="pb-4"
-              priority 
             />
           </div>
           <div className="p-4 bg-[#D0EDEE] px-5 py-5">
